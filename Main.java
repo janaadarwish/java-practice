@@ -1,33 +1,19 @@
-import java.util.ArrayList;
-
 public class Main {
     public static void main(String[] args) {
 
-        ArrayList<Integer> nums = new ArrayList<>();
-        nums.add(3);
-        nums.add(1);
-        nums.add(3);
-        nums.add(7);
-        nums.add(2);
+        System.out.println("\n--- Sort ---");
+        Sort.demo();
 
-        Shuffle.shuffle(nums);
-        System.out.println("Shuffle: " + nums);
+        System.out.println("\n--- GeometricObject Max ---");
+        GeometricObjectMax.demo();
 
-        Reverse.reverse(nums);
-        System.out.println("Reverse: " + nums);
+        System.out.println("\n--- ComparableCircle ---");
+        ansComparableCircle.demo();
 
-        System.out.println("Max: " + Max.max(nums));
+        System.out.println("\n--- Octagon ---");
+        Octagon.demo();
 
-        System.out.println("Count of 3: " + CountOccurrences.count(nums, 3));
-
-        System.out.println("No duplicates: " + RemoveDuplicates.removeDuplicates(nums));
-
-        System.out.println("Sum: " + Sum.sum(nums));
-
-        Sort.sort(nums);
-        System.out.println("Sorted: " + nums);
-
-        System.out.println("Is Sorted: " + IsSorted.isSorted(nums));
+        System.out.println("\n--- Rational ---");
+        Rational.demo();
     }
-    }
-
+}
